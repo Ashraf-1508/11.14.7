@@ -12,6 +12,7 @@
 \usepackage{enumitem}
 \usepackage{mathtools}
 \usepackage{gensymb}
+\usepackage{caption}
 \usepackage[breaklinks=true]{hyperref}
 \usepackage{tkz-euclide} % loads  TikZ and tkz-base
 \usepackage{listings}
@@ -38,40 +39,32 @@
 %
 
 \bibliographystyle{IEEEtran}
+
+
 \vspace{3cm}
 
 \title{
-%	\logo{
-Assignment-11.14.7 
+%  \logo{
+Assignment-2
 
-\large{EE:1205-Signals and Systems}
+\large{EE:1205 \brak{Signals  Systems}}
 
 Indian Institute of Technology, Hyderabad
-%	}
+%  }
 }
 \author{Md Ayaan Ashraf
 
 EE23BTECH11041
-}	
-
+}  
 \maketitle
-
 \newpage
-
-%\tableofcontents
-
 \bigskip
-
-\renewcommand{\thefigure}{\theenumi}
-\renewcommand{\thetable}{\theenumi}
+\renewcommand{\thefigure}{\arabic{figure}}
+\renewcommand{\thetable}{\arabic{table}}
 %\renewcommand{\theequation}{\theenumi}
 \section*{\textit{\textbf{Question}}}
 The motion of a particle executing simple harmonic motion is described by the
-displacement function,
-$x(t)$ = $A$ $cos$ ($\omega$t +$\phi$).
-If the initial $(t = 0)$ position of the particle is 1 cm and its initial velocity is
-$\omega$ cm/s, what are its amplitude and initial phase angle ? The angular frequency of the
-particle is $\pi s^{-1}$. If instead of the cosine function, we choose the sine function to
-describe the SHM : $x$ = $B$ sin ($\omega$t +$\alpha$), what are the amplitude and initial phase of the
+displacement function, $x(t)$ = $A$ $cos$ ($\omega$$t$ +$\phi$).
+If the initial $(t = 0)$ position of the particle is $1 cm$ and its initial velocity is $\omega\quad cm/s$, what are its amplitude and initial phase angle ? The angular frequency of the particle is $\pi\quad s^{-1}$. If instead of the cosine function, we choose the sine function todescribe the SHM : $x$ = $B$ $sin$ ($\omega$$t$ +$\alpha$), what are the amplitude and initial phase of the
 particle with the above initial conditions.
 \end{document}
