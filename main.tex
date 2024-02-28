@@ -6,6 +6,7 @@
 \usepackage{algorithmic}
 \usepackage{graphicx}
 \usepackage{textcomp}
+\usepackage{caption}
 \usepackage{xcolor}
 \usepackage{txfonts}
 \usepackage{listings}
@@ -75,36 +76,51 @@ particle with the above initial conditions.
 \section*{\textit{\textbf{Solution}}}
 \input{table/table}
 The displacement function for simple harmonic motion (SHM) is given by:
-\[ x(t) = A \cos(\omega t + \phi) \]
-
-where \(A\) is the amplitude, \(\omega\) is the angular frequency, and \(\phi\) is the phase angle.
-
+\begin{align}
+   x(t) = A \cos(\omega t + \phi)  
+\end{align}
 Given:
-\[ x(0) = A \cos(\phi) = 1 \text{ cm} \]
-\[ v(0) = -A \omega \sin(\phi) = \omega \text{ cm/s} \]
-
-We are given that \(\omega = \pi\) s\(^{-1}\). Substituting this into the initial velocity equation:
-\[ -A \pi \sin(\phi) = \pi \]
-
-Solving for \(\sin(\phi)\):
-\[ \sin(\phi) = -1 \]
-
-This implies that \(\phi = -\frac{\pi}{2}\) since the sine function is negative in the third quadrant.
-
-Therefore, the amplitude \(A\) is 1 cm, and the initial phase angle \(\phi\) is \(-\frac{\pi}{2}\).
-
+\begin{align}
+     x(0)&= A \cos(\phi) = 1 \text{ cm} \\
+ x'(0)&= -A \omega \sin(\phi) = \omega \text{ cm/s} \label{eq:3}
+ \end{align}
+Solving for $\phi$ and $A$:
+\begin{align}
+    tan(\phi) = -1\\
+\implies
+\phi = -\frac{\pi}{4} \\
+\implies 
+A= \sqrt{2}cm
+\end{align}
 If we choose the sine function instead, the displacement function becomes:
-\[ x(t) = B \sin(\omega t + \alpha) \]
-
-Following the same logic, if the initial conditions are the same:
-\[ B \sin(\alpha) = 1 \text{ cm} \]
-\[ -B \omega \cos(\alpha) = \omega \text{ cm/s} \]
-
-Solving for \(\sin(\alpha)\):
-\[ \sin(\alpha) = -1 \]
-
-This implies that \(\alpha = -\frac{\pi}{2}\).
-
-Therefore, for the sine function, the amplitude \(B\) is 1 cm, and the initial phase angle \(\alpha\) is \(-\frac{\pi}{2}\).
-
+\begin{align}
+    x(t) = B \sin(\omega t + \alpha) 
+    \end{align}
+    Given:\\
+    \begin{align}
+     B \sin(\alpha) &= 1 \text{ cm} \\
+    B \omega \cos(\alpha) &= \omega \text{ cm/s}\label{eq;11}
+\end{align}
+Solving for $\alpha$ and $B$:
+\begin{align}
+    tan(\alpha)& = 1\\
+\implies
+\alpha &= \frac{\pi}{4} \\
+\implies 
+B &=\sqrt{2}cm
+\end{align}
+\begin{figure}[h]
+\renewcommand\thefigure{1}
+    \centering
+    \includegraphics[width=0.8\columnwidth]{figs/fig1.png}
+    \caption{$x(t) = \sqrt{2}\cos(\pi t - \frac{\pi}{4}$)}
+    \label{Fig1}
+\end{figure}
+\begin{figure}[h]
+\renewcommand\thefigure{2}
+    \centering
+    \includegraphics[width=0.8\columnwidth]{figs/fig2.png}
+    \caption{$x(t) = \sqrt{2}\sin(\pi t + \frac{\pi}{4})$}
+    \label{Fig2}
+\end{figure}
 \end{document}
