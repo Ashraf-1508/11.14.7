@@ -12,7 +12,6 @@
 \usepackage{enumitem}
 \usepackage{mathtools}
 \usepackage{gensymb}
-\usepackage{caption}
 \usepackage[breaklinks=true]{hyperref}
 \usepackage{tkz-euclide} % loads  TikZ and tkz-base
 \usepackage{listings}
@@ -44,27 +43,68 @@
 \vspace{3cm}
 
 \title{
-%  \logo{
-Assignment-2
+%	\logo{
+Assignment-11.14.7 
 
-\large{EE:1205 \brak{Signals  Systems}}
+\large{EE:1205-Signals and Systems}
 
 Indian Institute of Technology, Hyderabad
-%  }
+%	}
 }
 \author{Md Ayaan Ashraf
 
 EE23BTECH11041
-}  
+}	
+
 \maketitle
+
 \newpage
+
+%\tableofcontents
+
 \bigskip
-\renewcommand{\thefigure}{\arabic{figure}}
-\renewcommand{\thetable}{\arabic{table}}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
 %\renewcommand{\theequation}{\theenumi}
-\section*{\textit{\textbf{Question}}}
+\section*{\textbf{\textit{Question}}}
 The motion of a particle executing simple harmonic motion is described by the
 displacement function, $x(t)$ = $A$ $cos$ ($\omega$$t$ +$\phi$).
-If the initial $(t = 0)$ position of the particle is $1 cm$ and its initial velocity is $\omega\quad cm/s$, what are its amplitude and initial phase angle ? The angular frequency of the particle is $\pi\quad s^{-1}$. If instead of the cosine function, we choose the sine function todescribe the SHM : $x$ = $B$ $sin$ ($\omega$$t$ +$\alpha$), what are the amplitude and initial phase of the
+If the initial $(t = 0)$ position of the particle is $1 cm$ and its initial velocity is $\omega\quad cm/s$, what are its amplitude and initial phase angle ? The angular frequency of the particle is $\pi\quad s^{-1}$. If instead of the cosine function, we choose the sine function to describe the SHM : $x$ = $B$ $sin$ ($\omega$$t$ +$\alpha$), what are the amplitude and initial phase of the
 particle with the above initial conditions.
+\section*{\textit{\textbf{Solution}}}
+\input{table/table}
+The displacement function for simple harmonic motion (SHM) is given by:
+\[ x(t) = A \cos(\omega t + \phi) \]
+
+where \(A\) is the amplitude, \(\omega\) is the angular frequency, and \(\phi\) is the phase angle.
+
+Given:
+\[ x(0) = A \cos(\phi) = 1 \text{ cm} \]
+\[ v(0) = -A \omega \sin(\phi) = \omega \text{ cm/s} \]
+
+We are given that \(\omega = \pi\) s\(^{-1}\). Substituting this into the initial velocity equation:
+\[ -A \pi \sin(\phi) = \pi \]
+
+Solving for \(\sin(\phi)\):
+\[ \sin(\phi) = -1 \]
+
+This implies that \(\phi = -\frac{\pi}{2}\) since the sine function is negative in the third quadrant.
+
+Therefore, the amplitude \(A\) is 1 cm, and the initial phase angle \(\phi\) is \(-\frac{\pi}{2}\).
+
+If we choose the sine function instead, the displacement function becomes:
+\[ x(t) = B \sin(\omega t + \alpha) \]
+
+Following the same logic, if the initial conditions are the same:
+\[ B \sin(\alpha) = 1 \text{ cm} \]
+\[ -B \omega \cos(\alpha) = \omega \text{ cm/s} \]
+
+Solving for \(\sin(\alpha)\):
+\[ \sin(\alpha) = -1 \]
+
+This implies that \(\alpha = -\frac{\pi}{2}\).
+
+Therefore, for the sine function, the amplitude \(B\) is 1 cm, and the initial phase angle \(\alpha\) is \(-\frac{\pi}{2}\).
+
 \end{document}
