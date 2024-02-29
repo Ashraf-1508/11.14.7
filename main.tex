@@ -77,12 +77,12 @@ particle with the above initial conditions.
 \begin{enumerate}
 \item In \figref{Fig1_11.14.7}, the equation is
 \begin{align}
-   x(t) = A \cos(2\pi f t + \phi)  
+   x_1(t) = A \cos(2\pi f t + \phi)  
 \end{align}
 Given:
 \begin{align}
-     x(0)&= A \cos(\phi) = 1 \text{ cm} \\
- x'(0)&= -A 2\pi f \sin(\phi) = 2\pi f \text{ cm/s} \label{eq:3}
+     x_1(0)&= A \cos(\phi) = 1 \text{ cm} \\
+ x_1'(0)&= -A 2\pi f \sin(\phi) = 2\pi f \text{ cm/s} \label{eq:3}
  \end{align}
 Solving for $\phi$ and $A$:
 \begin{align}
@@ -96,17 +96,17 @@ A= \sqrt{2}cm
 \renewcommand\thefigure{1}
     \centering
     \includegraphics[width=0.8\columnwidth]{figs/fig1.png}
-    \caption{$x(t) = \sqrt{2}\cos(\pi t - \frac{\pi}{4}$)}
+    \caption{$x_1(t) = \sqrt{2}\cos(\pi t - \frac{\pi}{4}$)}
     \label{Fig1_11.14.7}
 \end{figure}
     \item In \figref{Fig2_11.14.7}, the equation is
 \begin{align}
-    x(t) = B \sin(2\pi f t + \alpha) 
+    x_2(t) = B \sin(2\pi f t + \alpha) 
     \end{align}
     Given:\\
     \begin{align}
-     B \sin(\alpha) &= 1 \text{ cm} \\
-    B 2\pi f \cos(\alpha) &= 2\pi f \text{ cm/s}\label{eq;11}
+     x_2(0)=& B \sin(\alpha) = 1 \text{ cm} \\
+    x_2'(0)=& B 2\pi f \cos(\alpha) = 2\pi f \text{ cm/s}\label{eq;11}
 \end{align}
 Solving for $\alpha$ and $B$:
 \begin{align}
@@ -120,7 +120,7 @@ B &=\sqrt{2}cm
 \renewcommand\thefigure{2}
     \centering
     \includegraphics[width=0.8\columnwidth]{figs/fig2.png}
-    \caption{$x(t) = \sqrt{2}\sin(\pi t + \frac{\pi}{4})$}
+    \caption{$x_2(t) = \sqrt{2}\sin(\pi t + \frac{\pi}{4})$}
     \label{Fig2_11.14.7}
 \end{figure}
 \end{enumerate}
