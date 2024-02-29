@@ -74,14 +74,15 @@ If the initial $(t = 0)$ position of the particle is $1 cm$ and its initial velo
 particle with the above initial conditions.
 \section*{\textit{\textbf{Solution}}}
 \input{table/table}
-The displacement function for simple harmonic motion (SHM) is given by:
+\begin{enumerate}
+    \item
 \begin{align}
-   x(t) = A \cos(\omega t + \phi)  
+   x(t) = A \cos(2\pi f t + \phi)  
 \end{align}
 Given:
 \begin{align}
      x(0)&= A \cos(\phi) = 1 \text{ cm} \\
- x'(0)&= -A \omega \sin(\phi) = \omega \text{ cm/s} \label{eq:3}
+ x'(0)&= -A 2\pi f \sin(\phi) = 2\pi f \text{ cm/s} \label{eq:3}
  \end{align}
 Solving for $\phi$ and $A$:
 \begin{align}
@@ -91,14 +92,21 @@ Solving for $\phi$ and $A$:
 \implies 
 A= \sqrt{2}cm
 \end{align}
-If we choose the sine function instead, the displacement function becomes:
+\begin{figure}[h]
+\renewcommand\thefigure{1}
+    \centering
+    \includegraphics[width=0.8\columnwidth]{figs/fig1.png}
+    \caption{$x(t) = \sqrt{2}\cos(\pi t - \frac{\pi}{4}$)}
+    \label{Fig1}
+\end{figure}
+    \item 
 \begin{align}
-    x(t) = B \sin(\omega t + \alpha) 
+    x(t) = B \sin(2\pi f t + \alpha) 
     \end{align}
     Given:\\
     \begin{align}
      B \sin(\alpha) &= 1 \text{ cm} \\
-    B \omega \cos(\alpha) &= \omega \text{ cm/s}\label{eq;11}
+    B 2\pi f \cos(\alpha) &= 2\pi f \text{ cm/s}\label{eq;11}
 \end{align}
 Solving for $\alpha$ and $B$:
 \begin{align}
@@ -109,10 +117,11 @@ Solving for $\alpha$ and $B$:
 B &=\sqrt{2}cm
 \end{align}
 \begin{figure}[h]
-\renewcommand\thefigure{1}
+\renewcommand\thefigure{2}
     \centering
-    \includegraphics[width=0.8\columnwidth]{figs/fig.png}
-    \caption{$x(t) \;\;vs \;\; t$}
-    \label{Fig1}
+    \includegraphics[width=0.8\columnwidth]{figs/fig2.png}
+    \caption{$x(t) = \sqrt{2}\sin(\pi t + \frac{\pi}{4})$}
+    \label{Fig2}
 \end{figure}
+\end{enumerate}
 \end{document}
